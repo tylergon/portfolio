@@ -4,12 +4,13 @@
 
 **The Docket:**
 
+- [ ] Edit the front page to be Logo / Title / Carousal
 - [ ] Update phone header/footer: Center dropdown, socials in footer
-- [ ] Pin Footer to the bottom if there's nowhere to scroll
 - [ ] Centre the header tabs
-- [ ] Make the theme actual follow system...
 - [ ] Social icons dynamic theme styling
-- [ ] Move the blog to "Posts"
+- [x] Move the blog to "Posts"
+- [x] Pin Footer to the bottom if there's nowhere to scroll
+- [x] Make the theme actual follow system...
 
 ---
 

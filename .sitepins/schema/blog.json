@@ -1,6 +1,6 @@
 {
-  "file": "src/content/blog/post-2.md",
-  "name": "blog",
+  "file": "src/content/posts/post-2.md",
+  "name": "posts",
   "fileType": "md",
   "fmType": "yaml",
   "template": [

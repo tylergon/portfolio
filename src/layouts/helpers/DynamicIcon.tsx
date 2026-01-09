@@ -28,7 +28,7 @@ const DynamicIcon: FC<IDynamicIcon> = ({ icon, ...props }) => {
     return <span className="text-sm">Icon not found</span>;
   }
 
-  return <Icon {...props} />;
+  return <Icon color='white' {...props} />;
 };
 
 const getIconLibrary = (icon: string): IconMap | undefined => {

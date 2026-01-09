@@ -1,9 +1,11 @@
 ---
-title: "Hey, I'm Tyler!"
+title: "Hey! I'm Tyler"
 meta_title: "About"
-description: "this is meta description"
+description: "About Me - Tyler Goncalves"
 image: "/images/logo.png"
 draft: false
 ---
 
-Welcome to my e-portfolio. It's a work in progress so don't expect much yet :)
+A graduate student in geomatics, guy passionate about computer vision, urban planning, and DIY engineering.
+
+This is a continuation of what we started with...

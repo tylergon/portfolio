@@ -12,7 +12,7 @@ const commonFields = {
 
 // Post collection schema
 const blogCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/blog" }),
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/posts" }),
   schema: z.object({
     title: z.string(),
     meta_title: z.string().optional(),
@@ -84,19 +84,6 @@ const homepageCollection = defineCollection({
         link: z.string(),
       }),
     }),
-    features: z.array(
-      z.object({
-        title: z.string(),
-        image: z.string(),
-        content: z.string(),
-        bulletpoints: z.array(z.string()),
-        button: z.object({
-          enable: z.boolean(),
-          label: z.string(),
-          link: z.string(),
-        }),
-      }),
-    ),
   }),
 });
 
@@ -144,7 +131,7 @@ const testimonialSectionCollection = defineCollection({
 export const collections = {
   // Pages
   homepage: homepageCollection,
-  blog: blogCollection,
+  posts: blogCollection,
   authors: authorsCollection,
   pages: pagesCollection,
   about: aboutCollection,
