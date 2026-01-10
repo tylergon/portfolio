@@ -3,10 +3,12 @@ import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { getListPage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import Social from "@/components/Social.astro";
+import social from "@/config/social.json";
 
 const homepage = await getListPage("homepage", "-index");
 
-const { banner } = homepage.data;
+const { content } = homepage.data;
 ---
 
 <Base>
@@ -14,17 +16,17 @@ const { banner } = homepage.data;
     <div class="lg:col-7 md:col-9 mb-8 text-center">
       <ImageMod
         class="inline-block"
-        src={banner.image}
+        src={content.logo}
         height={380}
         width={380}
         alt="logo"
         format="png"
       />
       <h1
-        set:html={markdownify(banner.title)}
+        set:html={markdownify(content.title)}
         class="mb-4 text-h3 lg:text-h1"
       />
-      <p set:html={markdownify(banner.content)} class="mb-8" />
+      <Social source={social.main} className="social-icons" />
     </div>
   </section>
 </Base>
