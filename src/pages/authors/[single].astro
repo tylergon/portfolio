@@ -26,7 +26,7 @@ const { title, social, meta_title, description, image } = author.data;
 const { Content } = await render(author);
 
 // get all posts by author
-const BLOG_FOLDER = "blog";
+const BLOG_FOLDER = "posts";
 const posts = await getSinglePage(BLOG_FOLDER);
 const postFilterByAuthor = posts.filter(
   (post) => slugify(post.data.author) === slugify(title)

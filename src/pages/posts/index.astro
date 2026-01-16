@@ -9,7 +9,7 @@ import { sortByDate } from "@/lib/utils/sortFunctions";
 import PageHeader from "@/partials/PageHeader.astro";
 import PostSidebar from "@/partials/PostSidebar.astro";
 
-const BLOG_FOLDER = "blog";
+const BLOG_FOLDER = "posts";
 
 const postIndex = await getListPage(BLOG_FOLDER, "-index");
 if (postIndex.data.draft) {

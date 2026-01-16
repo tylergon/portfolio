@@ -1,3 +1,4 @@
+
 /* section style */
 .section {
   @apply py-24 xl:py-28;
@@ -14,16 +15,16 @@
 
 /* social icons */
 .social-icons {
-  @apply space-x-4;
+  @apply space-x-2;
 }
 .social-icons li {
   @apply inline-block;
 }
 .social-icons li a {
-  @apply flex h-9 w-9 items-center justify-center rounded-sm bg-primary text-center leading-9 text-white dark:bg-darkmode-primary dark:text-text-dark;
+  @apply flex h-9 w-9 items-center justify-center rounded-sm text-text-dark dark:text-darkmode-text-dark;
 }
 .social-icons li a svg {
-  @apply h-5 w-5;
+  @apply h-6 w-6 fill-text-dark dark:fill-darkmode-text;
 }
 
 /* notice */
