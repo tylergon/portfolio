@@ -99,6 +99,7 @@ const { pathname } = Astro.url;
               </li>
             ) : (
               <li class="nav-item">
+                {/* TODO: Implement alternate colouring for active icons ... though probably best elsewhere */}
                 <a
                   href={menu.url}
                   class={`nav-link block ${
@@ -114,20 +115,5 @@ const { pathname } = Astro.url;
         ))
       }
     </ul>
-    <!-- <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0"></div> -->
   </nav>
 </header>
-
-<!-- <ThemeSwitcher className="mr-5" /> -->
-<!-- <Social source={social.main} className="social-icons" />
-{
-  settings.search && (
-    <button
-      class="border-border text-text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
-      aria-label="search"
-      data-search-trigger
-    >
-      <IoSearch />
-    </button>
-  )
-} -->

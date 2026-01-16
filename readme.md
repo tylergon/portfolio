@@ -4,6 +4,7 @@
 
 **The Docket:**
 
+- [ ] Add my work history to my About Me page!!!
 - [ ] Fonts
 - [ ] Colours
 - [ ] Home page design overhaul
