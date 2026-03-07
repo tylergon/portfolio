@@ -1,8 +1,8 @@
 {
   "site": {
     "title": "N. Tyler Goncalves",
-    "base_url": "https://astroplate.netlify.app",
-    "base_path": "/",
+    "base_url": "https://tylergon.github.io",
+    "base_path": "/portfolio",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "favicon_dark": "/images/favicon-darkmode.png",

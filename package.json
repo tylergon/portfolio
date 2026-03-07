@@ -1,8 +1,8 @@
 {
-  "name": "astroplate",
-  "version": "5.11.0",
-  "description": "Astro and Tailwindcss boilerplate",
-  "author": "zeon.studio",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Tyler Goncalve's ePortfolio",
+  "author": "Tyler Goncalves",
   "license": "MIT",
   "packageManager": "yarn@1.22.22",
   "type": "module",
