@@ -1,9 +1,9 @@
 {
   "site": {
-    "title": "N. Tyler Goncalves",
+    "title": "Tyler's Portfolio",
     "base_url": "https://tylergon.github.io",
     "base_path": "/portfolio",
-    "trailing_slash": "never",
+    "trailing_slash": "ignore",
     "favicon": "/images/favicon.png",
     "favicon_dark": "/images/favicon-darkmode.png",
     "logo": "/images/logo.png",

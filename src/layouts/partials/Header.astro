@@ -1,11 +1,7 @@
 ---
 import Logo from "@/components/Logo.astro";
-import Social from "@/components/Social.astro";
-import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
-import social from "@/config/social.json";
-import { IoSearch } from "react-icons/io5";
 
 export interface ChildNavigationLink {
   name: string;
@@ -19,9 +15,13 @@ export interface NavigationLink {
   children?: ChildNavigationLink[];
 }
 
+
 const { main }: { main: NavigationLink[] } = menu;
-const { settings } = config;
+const { settings, site } = config;
 const { pathname } = Astro.url;
+
+console.log('>>>', pathname)
+
 ---
 
 <header class={`header z-30 ${settings.sticky_header && "sticky top-0"}`}>
@@ -101,7 +101,7 @@ const { pathname } = Astro.url;
               <li class="nav-item">
                 {/* TODO: Implement alternate colouring for active icons ... though probably best elsewhere */}
                 <a
-                  href={menu.url}
+                  href={`${site.base_path}${menu.url}`}
                   class={`nav-link block ${
                     (pathname === `${menu.url}/` || pathname === menu.url) &&
                     "active"

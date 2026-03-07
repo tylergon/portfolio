@@ -9,6 +9,7 @@ const {
   summary_length,
   blog_folder,
 }: { summary_length: number; blog_folder: string } = config.settings;
+const { base_path } = config.site
 const { data } = Astro.props;
 const { title, image, date, author, categories } = data.data;
 ---
@@ -27,7 +28,7 @@ const { title, image, date, author, categories } = data.data;
     )
   }
   <h4 class="mb-3">
-    <a href={`/${blog_folder}/${data.id}`}>
+    <a href={`${base_path}/${blog_folder}/${data.id}`}>
       {title}
     </a>
   </h4>

@@ -11,6 +11,7 @@ const {
   logo_height,
   logo_text,
   title,
+  base_path,
 }: {
   logo: string;
   logo_darkmode: string;
@@ -23,7 +24,7 @@ const {
 const { theme_switcher }: { theme_switcher: boolean } = config.settings;
 ---
 
-<a href="/" class="navbar-brand inline-block">
+<a href={`${base_path}`} class="navbar-brand inline-block">
   {
     src || srcDarkmode || logo || logo_darkmode ? (
       <>
