@@ -3,7 +3,7 @@
     "title": "N. Tyler Goncalves",
     "base_url": "https://tylergon.github.io",
     "base_path": "/portfolio",
-    "trailing_slash": false,
+    "trailing_slash": "never",
     "favicon": "/images/favicon.png",
     "favicon_dark": "/images/favicon-darkmode.png",
     "logo": "/images/logo.png",
