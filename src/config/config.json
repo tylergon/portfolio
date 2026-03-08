@@ -5,7 +5,7 @@
     "base_path": "/portfolio",
     "trailing_slash": "ignore",
     "favicon": "/images/favicon.png",
-    "favicon_dark": "/images/favicon-darkmode.png",
+    "favicon_dark": "/images/favicon_dark.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "40",
