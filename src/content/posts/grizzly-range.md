@@ -31,3 +31,5 @@ Using ArcGIS Pro, I performed a distance accumulation analysis. This type of ana
 Using a randomly generated start and end point across the Rocky Mountain foothills, the model calculated a Least Coss Path representing the mathematically optimal route a bear would take to minimize energy expenditure and human contact while maximizing the use of preferred habitat. 
 
 ### Key Takeaways
+
+This lab highlighted the importance of developing skills that cross technological barriers. While ArcGIS has a built in, sophisticated suite of tools, GDAL provides a low overhead, efficient, reproducable method for preparing data. More importantly, it was an excellent introduction into understanding how geomatics could be used to provide quantitative analysis for conservation, such as determining the most suitable locations for wildlife overpasses or identifying critical patches of habitat for migration.
