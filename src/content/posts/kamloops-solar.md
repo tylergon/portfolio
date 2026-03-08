@@ -3,7 +3,7 @@ title: "An Open-Source Workflow for Evaluating Rooftop Solar Potential"
 meta_title: ""
 description: "My capstone project developing an open source workflow for evaluating rooftop solar potential using Kamloops as a case study"
 date: 2026-03-06
-image: "/images/logo.png"
+image: "/images/kamloops_insolation.png"
 categories: ["Geomatics", "Energy"]
 author: "N. Tyler Goncalves"
 tags: ["Geomatics", "Energy"]
@@ -26,7 +26,7 @@ The methods only require two data inputs: (1) 2024 ALS collected and provided by
 
 #### Building Footprint Identification
 
-Using the `lidR` package in R, I normalized the point cloud and applied classification and height filters to remove non-building points below 2.5m. The remaining points were rasterized at a 2m spatial resolution. To isolate individual structures, I used Rook's Case adjacency clustering.
+Using the lidR package in R, I normalized the point cloud and applied classification and height filters to remove non-building points below 2.5m. The remaining points were rasterized at a 2m spatial resolution. To isolate individual structures, I used Rook's Case adjacency clustering.
 
 #### Solar Irradiation Simulation
 
