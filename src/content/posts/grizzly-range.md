@@ -4,9 +4,9 @@ meta_title: ""
 description: ""
 date: 2026-03-06
 image: "/images/grizzly-bear-lcp.png"
-categories: ["Geomatics", "Energy"]
+categories: ["Geomatics", "Conservation"]
 author: "N. Tyler Goncalves"
-tags: ["Geomatics", "Energy"]
+tags: ["Geomatics", "Conservation"]
 draft: false
 ---
 

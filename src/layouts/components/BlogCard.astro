@@ -14,40 +14,37 @@ const { data } = Astro.props;
 const { title, image, date, author, categories } = data.data;
 ---
 
-<div class="bg-body dark:bg-darkmode-body">
-  {
-    image && (
+<a href={`${base_path}/${blog_folder}/${data.id}`}>
+  <div class="blog-card bg-body dark:bg-darkmode-body">
+
+
+    {image && (
       <ImageMod
-        class="mb-6 w-full rounded"
+        class="w-full rounded object-cover object-center"
         src={image}
         alt={title}
         width={445}
         height={230}
         format="webp"
       />
-    )
-  }
-  <h4 class="mb-3">
-    <a href={`${base_path}/${blog_folder}/${data.id}`}>
-      {title}
-    </a>
-  </h4>
-  <ul class="mb-4">
-    <li>
-      <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
-      {
-        categories.map((category: string, index: number) => (
-          <a href={`/categories/${slugify(category)}`}>
-            {humanize(category)}
-          </a>
-        ))
-      }
-    </li>
-    {date && <li><FaRegClock className={"mr-2 -mt-1 inline-block"} />
-    {dateFormat(date)}</li>}
-  </ul>
-  <p class="mb-6">{plainify(data.body?.slice(0, Number(summary_length)))}</p>
-  <a class="btn btn-outline-primary btn-sm" href={`${base_path}/${blog_folder}/${data.id}`}>
-    read more
-  </a>
-</div>
+      )}
+
+    <div class="mt-2 px-2 py-2">
+      <h4 class="mb-3">
+        {title}
+      </h4>
+
+      <!-- TODO: Make the text grey for the date -->
+      <div class="mb-2">
+        <FaRegClock className={"mr-2 -mt-1 inline-block"} />
+        {dateFormat(date)}
+      </div>
+
+      <!-- TODO: Make the body length EVEN for any given entry -->
+      <p>
+        {plainify(data.body?.slice(0, Number(summary_length)))}
+      </p>
+    </div>
+    
+  </div>
+</a>

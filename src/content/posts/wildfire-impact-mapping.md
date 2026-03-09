@@ -4,9 +4,9 @@ meta_title: ""
 description: "Analyzing the severity of the Prouton Lakes fire and subsequent recovery"
 date: 2025-12-07
 image: "/images/fire-severity.png"
-categories: ["Geomatics", "Energy"]
+categories: ["Geomatics", "Wildfire"]
 author: "N. Tyler Goncalves"
-tags: ["Geomatics", "Energy"]
+tags: ["Geomatics", "Wildfire"]
 draft: false
 ---
 
