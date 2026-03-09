@@ -1,4 +1,7 @@
 
+.blog-card {
+  @apply text-left shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:translate-x-1 hover:border-blue-500;
+}
 
 .avatar-wrapper {
   @apply flex items-center justify-center p-2;

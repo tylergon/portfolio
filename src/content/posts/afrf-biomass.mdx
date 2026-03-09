@@ -1,0 +1,50 @@
+---
+title: "Developing Tools to Predict Above Ground Biomass in the Alex Fraser Research Forest"
+meta_title: ""
+description: ""
+date: 2026-02-03
+image: "/images/biomass-afrf.png"
+categories: ["Geomatics", "Energy"]
+author: "N. Tyler Goncalves"
+tags: ["Geomatics", "Energy"]
+draft: false
+---
+
+For this project, I developed a suite of predictive models for the Alex Fraser Research Forest (AFRF). The primary goal was to use ALS point clouds and ground-truth data to generate wall-to-wall predictions of Above Ground Biomass (AGB) and Dominant Height -- two metrics critical for forest and carbon management.
+
+### Methods
+
+I used an area-based approach to correlate LiDAR metrics with the ground measurements. To find metrics suitable for the predictions, I started by calculating a handful of standard metrics (as defined by the lidR package). Parsing through the options, I looked for metrics with low correlation that could quantify the cover, height, and complexity of the forest. Once I'd chosen these metrics out, I used forward selection to find the most suitable combination of metrics.
+
+##### Above Ground Biomass (AGB)
+
+After iteration, the final model for AGB settled on two height percentiles (zq<sub>20</sub> and zq<sub>95</sub>). This suggested that the total height and complexity of the mid canopy were the strongest indicators of AGB in the AFRF.
+
+While the R<sup>2</sup> indicates a moderate correlation, it indicates to us there is a complex relationship between stand structure and total AGB in the AFRF.
+
+**Initial Metrics**\
+zq20, zq95, zsd, zskew, pzabovezmean
+
+**The Final Equation**\
+*AGB* = 9,011 ∗ *zq*<sub>20</sub> + 7,287 ∗ *zq*<sub>95</sub> - 20,406
+
+**R<sup>2</sup>**\
+0.59
+
+
+##### Dominant Height
+
+The final model for dominant height was both simpler and more powerful. This is unexpected due to the power of ALS to capture structural information of the forest. Using the 95th percentile of height alone, we were able to achieve an R<sup>2</sup>.
+
+**Initial Metrics**\
+zq20 zq95 zmax zmean zsd zkurt pzabovezmean
+
+**The Final Equation**\
+*h* = 0.72430 ∗ *zmax* + 8.11721
+
+**R<sup>2</sup>**\
+0.82
+
+### Insights & Learning
+
+This project provided plenty of excellent insight into the strengths and limitations of ALS in modelling forest characteristics. While ALS is a powerful tool, there are naturally some barriers to overcome. For example, the complex web of relationships that determine AGB means that it's near impossible to build a silver bullet prediction model, even when looking at a smaller study area. Even so, this as a great exercise to further my understanding of ALS metrics, and I'm looking forward to pushing this a bit further once I've got a bit of free time on my plate!
