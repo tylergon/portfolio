@@ -4,6 +4,7 @@
 
 **The Docket:**
 
+- [ ] Update the docket
 - [ ] Add my work history to my About Me page!!!
 - [ ] Fonts
 - [ ] Colours
